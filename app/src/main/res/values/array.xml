@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="Hafalan">
-
-
+        <item>1 Juz</item>
+        <item>2 Juz</item>
+        <item>3 Juz</item>
+        <item>4 Juz</item>
+        <item>5 Juz</item>
+        <item>6 Juz</item>
+        <item>7 Juz</item>
+        <item>8 Juz</item>
+        <item>9 Juz</item>
+        <item>10 Juz</item>
     </string-array>
 </resources>

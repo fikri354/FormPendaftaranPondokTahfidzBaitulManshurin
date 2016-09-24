@@ -104,6 +104,7 @@
         android:layout_alignEnd="@+id/textViewJudul"
         android:layout_alignRight="@+id/textViewJudul"
         android:layout_centerVertical="true"
+        android:entries="@array/Hafalan"
         android:spinnerMode="dropdown" />
 
 </RelativeLayout>
