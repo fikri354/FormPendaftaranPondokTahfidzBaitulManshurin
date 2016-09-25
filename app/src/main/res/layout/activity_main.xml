@@ -30,10 +30,8 @@
         style="@style/Base.TextAppearance.AppCompat.Subhead"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="27dp"
+        android:layout_above="@+id/textViewAlamat"
+        android:layout_alignRight="@+id/editTextNama"
         android:text="PONPES BAITUL MANSHUURIIN"
         android:textColor="@color/material_deep_teal_500" />
 
@@ -42,9 +40,9 @@
         style="@style/Base.TextAppearance.AppCompat.Subhead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewLogo"
         android:layout_alignLeft="@+id/textViewJudul"
         android:layout_alignStart="@+id/textViewJudul"
-        android:layout_below="@+id/textViewJudul"
         android:background="@color/accent_material_dark"
         android:text="Mangliawan, Sawojajar 2, Malang"
         android:textColor="@color/abc_secondary_text_material_dark" />
@@ -91,20 +89,127 @@
         android:id="@+id/textViewHafalan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textViewRumah"
-        android:layout_marginTop="28dp"
+        android:layout_below="@+id/editTextRumah"
         android:layout_toEndOf="@+id/relativeLayout"
         android:layout_toRightOf="@+id/relativeLayout"
         android:text="Jumlah Hafalan (Juz)" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerHafalan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textViewJudul"
-        android:layout_alignRight="@+id/textViewJudul"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/textViewRumah"
+        android:layout_toEndOf="@+id/checkBox1"
+        android:layout_toRightOf="@+id/checkBox1"
         android:entries="@array/Hafalan"
-        android:spinnerMode="dropdown" />
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/textViewHafal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerHafalan"
+        android:layout_toLeftOf="@+id/editTextRumah"
+        android:layout_toStartOf="@+id/editTextRumah"
+        android:text="Juz yang Dihafalkan" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewHafal"
+        android:layout_alignLeft="@+id/textViewAlamat"
+        android:layout_alignStart="@+id/textViewAlamat"
+        android:checked="false"
+        android:text="Juz 1" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_alignStart="@+id/checkBox1"
+        android:layout_below="@+id/checkBox1"
+        android:checked="false"
+        android:text="Juz 2" />
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox4"
+        android:layout_alignStart="@+id/checkBox4"
+        android:layout_below="@+id/spinnerHafalan"
+        android:checked="false"
+        android:text="@string/juz_11" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox11"
+        android:layout_alignLeft="@+id/checkBox6"
+        android:layout_alignStart="@+id/checkBox6"
+        android:text="New CheckBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2"
+        android:layout_below="@+id/checkBox2"
+        android:checked="false"
+        android:text="Juz 3" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewAlamat"
+        android:layout_below="@+id/checkBox4"
+        android:text="New CheckBox" />
+
+    <TextView
+        android:id="@+id/textViewPondok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioGroup"
+        android:layout_toEndOf="@+id/relativeLayout"
+        android:layout_toRightOf="@+id/relativeLayout"
+        android:text="Pernah Hidup di Pondok" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox6"
+        android:layout_alignStart="@+id/checkBox6"
+        android:layout_below="@+id/checkBox6"
+        android:layout_marginTop="41dp">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ya" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Tidak" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_toEndOf="@+id/relativeLayout"
+        android:layout_toRightOf="@+id/relativeLayout"
+        android:text="OK" />
 
 </RelativeLayout>
