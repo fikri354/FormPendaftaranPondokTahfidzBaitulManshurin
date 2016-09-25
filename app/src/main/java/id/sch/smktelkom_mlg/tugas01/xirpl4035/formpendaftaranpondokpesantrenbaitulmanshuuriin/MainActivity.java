@@ -25,7 +25,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        tvNama = (TextView) findViewById(R.id.textViewNama);
+        tvRumah = (TextView) findViewById(R.id.textViewAlamat);
+        tvHafalan = (TextView) findViewById(R.id.textViewHafalan);
+        tvHafal = (TextView) findViewById(R.id.textViewHafal);
+        etNama = (EditText) findViewById(R.id.editTextNama);
+        etRumah = (EditText) findViewById(R.id.editTextRumah);
+        spHafalan = (Spinner) findViewById(R.id.spinnerHafalan);
+        bOk = (Button) findViewById(R.id.buttonOK);
 
         findViewById(R.id.buttonOK).setOnClickListener(new View.OnClickListener() {
             @Override
