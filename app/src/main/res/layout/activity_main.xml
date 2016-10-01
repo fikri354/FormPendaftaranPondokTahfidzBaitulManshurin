@@ -31,34 +31,34 @@
         android:id="@+id/imageViewLogo"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:src="@drawable/images"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/images" />
 
     <TextView
         android:id="@+id/textViewJudul"
         style="@style/Base.TextAppearance.AppCompat.Subhead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PONPES BAITUL\n MANSHUURIIN"
-        android:textColor="@color/material_deep_teal_500"
         android:layout_below="@+id/relativeLayout"
-        android:layout_toRightOf="@+id/textViewPondok"
+        android:layout_gravity="center_horizontal"
         android:layout_toEndOf="@+id/textViewPondok"
-        android:layout_gravity="center_horizontal" />
+        android:layout_toRightOf="@+id/textViewPondok"
+        android:text="PONPES BAITUL\n MANSHUURIIN"
+        android:textColor="@color/material_deep_teal_500" />
 
     <TextView
         android:id="@+id/textViewAlamat"
         style="@style/Base.TextAppearance.AppCompat.Medium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextNama"
+        android:layout_alignLeft="@+id/editTextNama"
+        android:layout_alignRight="@+id/editTextNama"
+        android:layout_alignStart="@+id/editTextNama"
+        android:layout_below="@+id/textViewJudul"
         android:background="@color/accent_material_dark"
         android:text="          Mangliawan, Sawojajar 2, Malang"
-        android:textColor="@color/abc_secondary_text_material_dark"
-        android:layout_below="@+id/textViewJudul"
-        android:layout_alignLeft="@+id/editTextNama"
-        android:layout_alignStart="@+id/editTextNama"
-        android:layout_alignRight="@+id/editTextNama"
-        android:layout_alignEnd="@+id/editTextNama" />
+        android:textColor="@color/abc_secondary_text_material_dark" />
 
     <TextView
         android:id="@+id/textViewNama"
@@ -130,31 +130,31 @@
         android:id="@+id/checkBox1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:checked="false"
-        android:text="Juz 1"
-        android:layout_alignTop="@+id/textViewHafal"
         android:layout_alignLeft="@+id/checkBox2"
-        android:layout_alignStart="@+id/checkBox2" />
+        android:layout_alignStart="@+id/checkBox2"
+        android:layout_alignTop="@+id/textViewHafal"
+        android:checked="false"
+        android:text="Juz 1" />
 
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:checked="false"
-        android:text="Juz 2"
-        android:layout_below="@+id/textViewHafal"
+        android:layout_alignEnd="@+id/textViewPondok"
         android:layout_alignRight="@+id/textViewPondok"
-        android:layout_alignEnd="@+id/textViewPondok" />
+        android:layout_below="@+id/textViewHafal"
+        android:checked="false"
+        android:text="Juz 2" />
 
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Juz 3"
-        android:layout_below="@+id/checkBox4"
         android:layout_alignLeft="@+id/checkBox4"
         android:layout_alignStart="@+id/checkBox4"
-        android:checked="false" />
+        android:layout_below="@+id/checkBox4"
+        android:checked="false"
+        android:text="Juz 3" />
 
     <TextView
         android:id="@+id/textViewPondok"
@@ -193,10 +193,25 @@
         android:id="@+id/buttonOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OK"
         android:layout_below="@+id/radioGroup"
+        android:layout_gravity="center_horizontal"
         android:layout_toLeftOf="@+id/radioGroup"
-        android:layout_toStartOf="@+id/radioGroup" />
+        android:layout_toStartOf="@+id/radioGroup"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/textViewHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="New Text" />
+
+    <TextView
+        android:id="@+id/textViewHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="" />
 
 </LinearLayout>
 </ScrollView>
